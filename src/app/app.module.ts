@@ -33,6 +33,9 @@ import { AlunoComponent } from './aluno/aluno.component';
 import { AlunoNovoComponent } from './aluno/aluno-novo.component';
 import { AlundoEditarComponent } from './aluno/aluno-editar.component';
 import { ConfirmacaoComponent } from './confirmacao/confirmacao.component';
+import { CursosComponent } from './curso/cursos.component';
+import { CursoNovoComponent } from './curso/curso-novo.component';
+import { CursoEditarComponent } from './curso/curso-editar.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +48,9 @@ import { ConfirmacaoComponent } from './confirmacao/confirmacao.component';
     AlunoNovoComponent,
     AlundoEditarComponent,
     ConfirmacaoComponent,
+    CursosComponent,
+    CursoNovoComponent,
+    CursoEditarComponent,
   ],
   imports: [
     BrowserModule,
