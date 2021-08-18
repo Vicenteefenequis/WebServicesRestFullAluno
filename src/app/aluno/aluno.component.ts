@@ -15,7 +15,14 @@ export class AlunoComponent implements OnInit {
   aluno: Aluno = new Aluno();
 
   alunoDataSource: MatTableDataSource<Aluno>;
-  displayedAluno: String[] = ['idaluno', 'nome', 'update', 'delete'];
+  displayedAluno: String[] = [
+    'idaluno',
+    'nome',
+    'sexo',
+    'dt_nasc',
+    'update',
+    'delete',
+  ];
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
