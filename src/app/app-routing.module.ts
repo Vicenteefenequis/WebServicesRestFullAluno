@@ -6,6 +6,9 @@ import { HomeComponent } from './home/home.component';
 import { AlunoComponent } from './aluno/aluno.component';
 import { AlunoNovoComponent } from './aluno/aluno-novo.component';
 import { AlundoEditarComponent } from './aluno/aluno-editar.component';
+import { CursosComponent } from './curso/cursos.component';
+import { CursoNovoComponent } from './curso/curso-novo.component';
+import { CursoEditarComponent } from './curso/curso-editar.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,6 +23,19 @@ const routes: Routes = [
   {
     path: 'aluno-editar/:id',
     component: AlundoEditarComponent,
+    pathMatch: 'full',
+  },
+  {
+    path: 'cursos',
+    component: CursosComponent,
+  },
+  {
+    path: 'curso-novo',
+    component: CursoNovoComponent,
+  },
+  {
+    path: 'curso-editar/:id',
+    component: CursoEditarComponent,
     pathMatch: 'full',
   },
 ];
